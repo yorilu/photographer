@@ -1,0 +1,649 @@
+$icons-list:back-icon,phone-icon,verificate-icon,password-icon,throw-icon,head-icon,data-icon,add-icon,form-icon,person-icon,
+            time-icon1,address-icon1,theme-icon,time-icon2,address-icon2,close-icon,finish-icon,add-icon2,back-icon2,set-icon,
+            head-img,nodata-icon,next-icon,choose-icon,add-icon3,address-icon3,sign-icon,eat-icon,
+            drive-icon,live-icon,money-icon;
+@each $icon in $icons-list{
+  .#{$icon} {
+    background-image:url("../imgs/#{$icon}.png");
+  }
+}
+
+
+//登录，注册页面
+.page{
+  height:100%;
+  width:100%;
+}
+
+.app{
+  height: 100%;
+  width: 100%;
+}
+
+//header
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  padding:20px;
+  z-index:100;
+  border-bottom:1px solid #E3E3E3;
+  .add-icon2,.back-icon2{
+    position:absolute;
+    height:20px;
+    width:20px;
+  }
+  .pa-r20{
+    right:0;
+    margin-right:20px;
+  }
+  .pa-l20{
+    left:0;
+    margin-left:20px;
+  }
+}
+.form-head{
+  div{
+    display:inline-block;
+    position:relative;
+    width:32.3%;
+  }
+  .text-dr{
+    width:16px;
+    position:absolute;
+    top:24px;
+    left:50%;
+    margin-left:-9px;
+  }
+}
+//footer
+.footer{
+  position:fixed;
+  bottom:0;
+  z-index:100;
+  width:100%;
+  height:49px;
+  li{
+    width:20%;
+    float:left;
+    text-align:center;
+    height:49px;
+    font-size:12px;
+    color:#888;
+  }
+  .head-icon,.data-icon,.form-icon,.person-icon{
+    margin:0 auto;
+    margin-top: 6px;
+    height: 22px;
+    width: 22px;
+  }
+  .add-icon{
+    margin:0 auto;
+    margin-top:9px;
+    height:30px;
+    width:30px;
+  }
+  .selected {
+    color:#FECE00;
+    .head-icon{
+      background-image:url("../imgs/head-icon2.png");
+    }
+    .data-icon{
+      background-image:url("../imgs/data-icon2.png");
+    }
+    .form-icon{
+      background-image:url("../imgs/form-icon2.png");
+    }
+    .person-icon{
+      background-image:url("../imgs/person-icon2.png");
+    }
+  }
+}
+
+// 时间弹框
+.time-box{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  border-top:1px solid #E3E3E3;
+  padding:20px;
+  .close-icon{
+    width:21px;
+    height:21px;
+  }
+  .finish-icon{
+    width:26px;
+    height:17px;
+  }
+}
+// 黄色底框
+.bor-bot{
+  height:2px;
+  width:30px;
+  background-color:#FECE00;
+  margin-top:10px;
+}
+// 瀑布流
+.every-day{
+  width: 100%;
+  height: auto;
+
+  -webkit-column-count:2;
+  -moz-column-count:2;
+  column-count:2;
+
+  -webkit-column-gap:4px;
+  -moz-column-gap:4px;
+  column-gap:4px;
+  img{
+    width:100%;
+  }
+}
+
+//登录注册
+.home-bg{
+  height:100%;
+  background-image:url("../imgs/bg.jpg");
+}
+
+.prompt{
+  position:absolute;
+  bottom:-32px;
+}
+.back-icon{
+  height:20px;
+  width:20px;
+  float:left;
+  margin:10px;
+}
+.logo-img{
+  width: 205.5px;
+  height: 32px;
+  position: relative;
+  left: 50%;
+  margin-left: -102px;
+  background-image:url("../imgs/logo.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.login-regist{
+  width:80%;
+  margin:0 auto;
+  margin-top:60px;
+  li{
+    position:relative;
+    height:40px;
+    line-height:40px;
+    border-bottom:1px solid #8F9292;
+    input{
+      position:absolute;
+      height:40px;
+      padding-left:35px;
+      background-color:transparent;
+      color:#FFF;
+      font-size:16px;
+    }
+    ::-webkit-input-placeholder{
+      color:rgba(255,255,255,0.3);
+    }
+  }
+}
+.phone-icon,.verificate-icon,.password-icon{
+  display:block;
+  position:absolute;
+  top:10px;
+}
+.phone-icon{
+  height:19px;
+  width:14px;
+}
+.verificate-icon{
+  height:20px;
+  width:17px;
+}
+.password-icon{
+  height:21px;
+  width:19px;
+}
+.get-verificate{
+  position:absolute;
+  right:0;
+  height:40px;
+  background-color:rgba(255,255,255,0.2);
+  padding:0 10px;
+  color:rgba(255,255,255,1);
+  border-radius:2px;
+}
+.login-regist:after{
+  display:block;
+  content: "";
+  clear:both;
+}
+.circle-yel{
+  position:relative;
+  margin:0 auto;
+  margin-top:20px;
+  height:70px;
+  width:70px;
+  border-radius:35px;
+}
+.throw-icon{
+  position:absolute;
+  left:26px;
+  top:26px;
+  height:15px;
+  width:15px;
+}
+
+// 今日头图
+.top-head{
+  position:relative;
+  height:210px;
+  width:100%;
+  background-image:url("../imgs/top-bg.jpg");
+  background-size:100% 100%;
+}
+.top-text{
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  width:200px;
+}
+.activity{
+  font-size:16px;
+  line-height:17px;
+  color:#FFF;
+  font-weight:bold;
+  border-left:2px solid #FECE00;
+  padding-left:10px;
+}
+.top-title{
+  padding:20px 0 30px 20px;
+  position:relative;
+}
+
+.more{
+  position:absolute;
+  right:20px;
+  top:36px;
+}
+
+// 精选头图
+.choosed{
+  width:100%;
+  overflow:hidden;
+  li{
+    float:left;
+    height:150px;
+    border:1px solid #FFF;
+  }
+  .one{
+    background-image:url("../imgs/bg.jpg");
+    height:150px;
+    width:54%;
+  }
+  .two{
+    height:150px;
+    width:44%;
+    background-image:url("../imgs/top-bg.jpg");
+    background-size:cover;
+  }
+}
+
+
+//查看大图
+.user{
+  padding:23px 15px;
+  overflow:hidden;
+  color:#FFF;
+  .user-icon{
+    height:35px;
+    width:35px;
+    border-radius:18px;
+    background-image:url("../imgs/massage-img.png");
+  }
+  .close-icon2{
+    height:40px;
+    width:40px;
+    background-image:url("../imgs/close-icon2.png");
+  }
+}
+.info-icon{
+  z-index:15;
+  position:fixed;
+  left:15px;
+  bottom:20px;
+  height:20px;
+  width:20px;
+  background-image:url("../imgs/info-icon.png");
+}
+.camera-data{
+  position:fixed;
+  z-index:10;
+  bottom:0;
+  background-color:rgba(0,0,0,0.3);
+  padding:20px 20px 50px;
+  font-size:12px;
+  line-height:20px;
+  span{
+    display:inline-block;
+    width:20%;
+    text-align:right;
+    color:#999;
+  }
+  p{
+    display:inline-block;
+    margin-left:20px;
+    color:#FFF;
+    width:70%;
+  }
+}
+// 日程
+.date-plan{
+  padding:0 15px;
+  .plan-data{
+    display: list-item;
+    overflow:hidden;
+    border-top:1px solid #E3E3E3;
+    border-bottom:1px solid #E3E3E3;
+    padding:20px 20px 20px 0;
+  }
+  .date,.data-content{
+    display:inline-block;
+    float:left;
+  }
+  .date{
+    position:relative;
+    width:21%;
+  }
+  .data-content{
+    width:79%;
+  }
+  .bor-yel{
+    position:absolute;
+    right:0;
+    top:50%;
+    margin-top:-8px;
+    height:16px;
+    width:2px;
+    background-color:#FECE00;
+    float:left;
+  }
+}
+.time-icon1{
+  width:12px;
+  height:11px;
+}
+.address-icon1{
+  position: relative;
+  top:2px;
+  width:12px;
+  height:15px;
+}
+// 添加安排
+.add-plan{
+  .plan-text{
+    padding-left:20px;
+    border-bottom:1px solid #E3E3E3;
+    li{
+      position:relative;
+      border-bottom:1px solid #E3E3E3;
+      padding:23px 0;
+      input{
+        height:25px;
+        padding-left:40px;
+      }
+    }
+    li:last-child{
+      border-bottom:none;
+    }
+    .theme-icon,.time-icon2,.address-icon2{
+      position:absolute;
+      top:23px;
+      height:24px;
+      width:24px;
+    }
+    .time-choose{
+      padding-left:40px;
+      div{
+        display: inline-table;
+      }
+    }
+  }
+}
+
+
+//订单
+.form-list{
+  padding:0 15px;
+  li{
+    border-bottom:1px solid #E3E3E3;
+    padding:20px 0;
+    .form-content{
+      position:relative;
+    }
+
+    .act-img{
+      height:100px;
+      width:128px;
+      background-image:url("../imgs/bg.jpg");
+    }
+    .form-data{
+      position: absolute;
+      min-height:100px;
+    }
+  }
+
+}
+.pa-b0{
+  position:absolute;
+  bottom:0;
+}
+//订单详情
+.data-bg{
+  position:relative;
+  height:195px;
+  width:100%;
+  background-image:url("../imgs/person-bg.jpg");
+  .data-rgba{
+    position:absolute;
+    left:0;
+    right:0;
+    height:195px;
+    background-color:rgba(0,0,0,0.2);
+    color:#FFF;
+    text-align:center;
+  }
+  .w55{
+    width:55%;
+    margin:55px auto 0;
+  }
+}
+.pho-data{
+  padding:15px 35px 60px 20px;
+  .address-icon3{
+    height:13px;
+    width:15px;
+  }
+  .pho-needs{
+    li{
+      margin-top:20px;
+      p{
+        color:#565656;
+        font-size:12px;
+        line-height:20px;
+      }
+      p:first-child{
+        color:#000;
+        font-size:14px;
+        margin-bottom:10px;
+      }
+      .sign-icon{
+        height:11px;
+        width:10px;
+        margin-right:10px;
+      }
+    }
+    .eat-icon,.drive-icon,.live-icon{
+      height:21px;
+      width:21px;
+    }
+    .w22{width:22px;}
+    .money-icon{
+      height:26px;
+      width:21px;
+    }
+  }
+}
+
+
+
+
+//个人
+.person{
+  .header{
+    position:relative;
+    padding:8px;
+  }
+  .text-dr{
+    width:8px;
+    margin-left:-4px;
+    top: 25px;
+    margin-top:0;
+  }
+}
+.person-top{
+  position:relative;
+  height:215px;
+  width:100%;
+  background-image:url("../imgs/person-bg.jpg");
+  background-size:100% 100%;
+  .set-icon{
+    height:20px;
+    width:20px;
+    margin:15px;
+    float:right;
+  }
+}
+.head-data{
+  position:absolute;
+  bottom:-57px;
+  left:50%;
+  margin-left:-34px;
+}
+.head-img{
+  height:68px;
+  width:68px;
+  border-radius:36px;
+  border:2px solid #FFF;
+}
+.nodata-icon{
+  height:88px;
+  width:88px;
+}
+
+.deta-list{
+  li{
+    border-bottom:1px solid #E3E3E3;
+  }
+  .selected{
+    .next-icon{
+      background-image:url("../imgs/down-icon.png");
+    }
+  }
+  .next-icon{
+    position:relative;
+    top:-10px;
+    height:15px;
+    width:15px;
+    float: right;
+    margin-right:15px;
+  }
+  .income{
+    padding:20px 0;
+    div{
+      display:inline-block;
+      width:32.3%;
+      text-align:center;
+    }
+  }
+  .deta-table{
+    background-color:#F5F5F5;
+    border-top:1px solid #E3E3E3;
+    table{
+      width:100%;
+      padding:5px 0;
+      tr{
+        height:50px;
+      }
+      td:first-child{
+        color:#C7C7C7;
+      }
+      td{
+        text-align:center;
+      }
+    }
+  }
+}
+.massage-list{
+  padding-left:15px;
+  li{
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid #E3E3E3;
+    padding:15px 15px 15px 0;
+    .massage-img{
+      float:left;
+      height:50px;
+      width:50px;
+      border-radius:5px;
+      background-image:url("../imgs/massage-img.png");
+    }
+    .ms-time{
+      position:absolute;
+      right:15px;
+      top:15px;
+      font-size:12px;
+      color:#ccc;
+    }
+  }
+}
+//相机胶卷
+.img-list{
+  width:100%;
+  .img-bg{
+    position:relative;
+    height:124px;
+    width:100%;
+    background-image:url("../imgs/bg.jpg");
+  }
+  .selected{
+    .choose-icon{
+      background-image:url("../imgs/choose-icon2.png");
+    }
+  }
+  .choose-icon{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    height:26px;
+    width:26px;
+  }
+}
+
+.release-list{
+  width:100%;
+  .rel-img{
+    height:80px;
+    width:100%;
+    background-image:url("../imgs/bg.jpg");
+  }
+  .add-img{
+    height:80px;
+    width:100%;
+    background-image:url("../imgs/add-img.png");
+    background-size:100% 100%;
+  }
+}

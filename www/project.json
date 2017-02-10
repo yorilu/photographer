@@ -1,0 +1,8 @@
+{
+  "project": {
+    "useMock": true,
+    "version": "v1.0.0",
+    "requestUrl": "http://appapi.p.vphotos.cn/vphotosClient/",
+    "appId": "wxe41251ab73797f50"
+  }
+}
